@@ -68,7 +68,7 @@ def plot_bands(bands, horizontal_energy=0, horizontal_color='black', horizontal_
     plt.xticks(high_symmetry_x, high_symmetry_labels)
     
     plt.xlabel('K point')
-    plt.ylim(-1, 1)
+    plt.ylim(-2, 5)
     plt.xlim(0, 3.85445)
     plt.ylabel('Energy (eV)')
     plt.title('Wien2k band structure')
