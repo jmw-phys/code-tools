@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # 循环从0到5
-for x in {0..5}
+#for x in {0..5}
+for x in 0 2
 do
     # 定义目录名称
     dir="idx-$x"
@@ -10,7 +11,7 @@ do
     mkdir "$dir"
 
     # 复制文件到新目录
-    cp sgm_stochpx.jl sig.inpx "$dir/"
+    cp giw_stochpx.jl Gf.out "$dir/"
 
     # 修改 sgm_stochpx.jl 文件的第37行
     # 使用sed命令替换第37行内容为 "band_idx = $x"

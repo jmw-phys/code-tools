@@ -1,11 +1,19 @@
 import numpy as np
+import glob
+import os
+
+# Find the first sig.inp* file in the current directory
+sig_files = glob.glob('sig.inp*')
+if not sig_files:
+    raise FileNotFoundError("No sig.inp* files found in the current directory")
+input_file = sig_files[0]
 
 # Input data
 num_orbitals = 5
 
 # Each row: frequency, ReSigma and ImSigma for orbital 1, ReSigma and ImSigma for orbital 2, ..., ReSigma and ImSigma for orbital 5
 # Only read first 3 rows of data, skip lines starting with #
-data = np.loadtxt('sig.inp.2.1', max_rows=3, comments='#')
+data = np.loadtxt(input_file, max_rows=3, comments='#')
 
 # Add data validation
 if data.shape[1] != 1 + 2 * num_orbitals:
@@ -56,7 +64,7 @@ for i in range(num_orbitals):
         continue
 
 # Read the entire original file
-with open('sig.inp.2.1', 'r') as f:
+with open(input_file, 'r') as f:
     all_lines = f.readlines()
 
 # Save to new file, maintaining the original format completely
@@ -78,4 +86,3 @@ with open('sig.inp.new', 'w') as f:
         f.write(line)
 
 print("\nCorrected data has been saved to sig.inp.new")
-print("\n修正后的数据已保存到 sig.inp.new")
