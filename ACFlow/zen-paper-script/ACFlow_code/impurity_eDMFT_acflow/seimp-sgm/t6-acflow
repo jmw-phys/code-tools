@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+suffix=$(basename $PWD | cut -c 1-5)
+sbatch --export=suffix=$suffix <<EOT
+#!/bin/bash
+#SBATCH -p v6_384
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 96
+#SBATCH -c 1
+#SBATCH -J jmw${suffix}
+#SBATCH --exclusive
+
+
+julia acflow_norg_sgm.jl   > nohup.dat 2>&1
+EOT

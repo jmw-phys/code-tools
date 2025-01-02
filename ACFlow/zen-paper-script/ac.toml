@@ -1,0 +1,22 @@
+[BASE]
+finput = "svo_norg_t2g.data"
+solver = "StochPX"
+ktype  = "fermi"
+mtype  = "flat"
+grid   = "ffreq"
+mesh   = "linear"
+ngrid  = 200
+nmesh  = 1201
+wmax   = 8.0
+wmin   = -4.0
+beta   = 157.07963267949
+offdiag = false
+
+[StochPX]
+method = "mean"
+nfine  = 100000
+npole  = 2000
+ntry   = 5000
+nstep  = 100
+theta  = 1e+8
+eta    = 1e-1
