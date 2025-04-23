@@ -1,3 +1,5 @@
+
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 using Statistics
 using LinearAlgebra
 using Printf

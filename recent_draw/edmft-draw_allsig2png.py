@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 #!/opt/homebrew/bin/python3
-# Copyright 2024, [Jia-Ming Wang, RUC, jmw@ruc.edu.cn]
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 # All rights reserved.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy

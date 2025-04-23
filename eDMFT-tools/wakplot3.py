@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # @Copyright 2007 Kristjan Haule
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 
 import matplotlib
 matplotlib.use('Agg')

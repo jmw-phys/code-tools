@@ -1,10 +1,12 @@
 #!/usr/local/bin/python3
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 ##!/opt/homebrew/bin/python3
 import sys
 import numpy as np
 import matplotlib
 matplotlib.use("pdf") # setup backend
 import matplotlib.pyplot as plt
+
 
 matplotlib.rcParams['mathtext.fontset'] = 'cm'
 matplotlib.rcParams['mathtext.rm'] = 'serif'

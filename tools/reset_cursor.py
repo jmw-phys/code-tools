@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 '''
 Cursor Trial Reset Tool
 

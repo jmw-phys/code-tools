@@ -1,4 +1,5 @@
 #!/opt/homebrew/bin/julia julia
+# code developed and maintained and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 ##!/usr/bin/env julia
 
 using Statistics

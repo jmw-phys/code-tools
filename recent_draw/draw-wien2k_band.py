@@ -1,4 +1,5 @@
 #!/opt/homebrew/bin/python3
+# code developed and maintained by (jmw@ruc.edu.cn, RUC, China) date 2025
 ##!/usr/local/bin/python3
 
 import numpy as np
